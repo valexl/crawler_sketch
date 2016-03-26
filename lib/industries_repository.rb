@@ -8,12 +8,6 @@ class ESRepository
 
   klass ::Industry
 
-  # settings number_of_shards: 1 do
-  #   mapping do
-  #     indexes :text, analyzer: 'snowball'
-  #   end
-  # end
-
   settings analysis: {
     analyzer: {
       default: {

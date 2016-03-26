@@ -9,21 +9,7 @@ class Page
     industry ||= try_to_find_industry_by_the_most_frequent_words #TODO it should be used only on the first attempt. On all next attempts we should use only machine learning
     industry ||= try_to_find_industry_by_content #TODO it should be used only on the first attempt. On all next attempts we should use only machine learning
     
-    # lear_machine!(industry) if industry.present?
-    
-    #I
-      #1) get title
-      #2) get meta[name=description]
-      #3) Find some words which repeet several times
-      #4) If only one word from this list andwe can think that it is industry 
-    #II
-      #1) get title
-      #2) get meta[name=description]
-      #3) If we can find words from industries list
-
-
-    #title
-    #meta[name=description]
+    lear_machine!(industry) if industry.present?
   end
 
   private

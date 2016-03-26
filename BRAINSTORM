@@ -1,0 +1,43 @@
+SOME INFO
+
+  HOW TO FIND ALL AVAILABLES URLS
+    1) http://www.dmoz.org/
+    2) https://developers.google.com/custom-search/json-api/v1/overview (I am stell not sure about it)
+
+  NEWS or BLOG
+    1) The amount of chars in article. 2000 is the avarage value for BLOG article
+    2) Many blogs use the same engine for creating (in Russian is WordPress for example)
+    3) Tags cloud is one of reason thing that this website is blog
+    4) After each article the links like #tag1, tag2
+    5) About us/ About me. The page when we can find some useful information.
+
+
+
+IDEAS
+  INDUSTRIES FOR URL
+    1) Meta-tags
+    2) Try to get infromation from SSL certificate (probably description... I am not sure that there are many web sites which contains this information in description)
+    3) http://www.seobythesea.com/2012/07/google-categories-web-pages/
+    4) https://github.com/alexandru/stuff-classifier
+    5) We can start with this inustries http://hbswk.hbs.edu/industries/ or https://biz.yahoo.com/ic/ind_index_alpha.html. Then we try to find this industries in some metatags and start learning our machine. 
+
+
+
+1) We have to create available industries list
+  2) We have to have implements for detecting new industries (for the first time we can use some constant list. For example http://hbswk.hbs.edu/industries/)
+  3) We have to have implements for detecting industry for the current page
+    3.1 Try to find words from industry in title or page description field
+    3.2 Try to use machine learning for detecting industry by title or description
+    3.3 If the industry is nil then mark this url as unprocessable at the moment
+    3.4 After some time this url will be run again by this algorithm (when machine learn increase its knowledge)
+
+1) what will you do
+2) when is it ready
+3) how much does it cost?
+
+input: url
+output: industry
+
+
+
+

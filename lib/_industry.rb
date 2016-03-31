@@ -9,11 +9,11 @@ class Industry
   end
 
   def self.get(url)
-    page        = Page.new(MainHelper.get_stage(url))
+    page = Page.new(MainHelper.get_stage(url))
     page.industry
   end
 
   def to_hash
-    {id: @id, title: @title}
+    { id: @id, title: @title }
   end
 end

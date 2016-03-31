@@ -14,5 +14,9 @@ class MachineLearning
     self.instance.classifier.classify(text)
   end
 
+  def self.train(industry, phrase)
+    self.instance.classifier.train(industry, phrase)
+  end
+
 end
 

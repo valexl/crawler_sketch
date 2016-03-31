@@ -9,7 +9,8 @@ class Page
     industry ||= try_to_find_industry_by_the_most_frequent_words #TODO it should be used only on the first attempt. On all next attempts we should use only machine learning
     industry ||= try_to_find_industry_by_content #TODO it should be used only on the first attempt. On all next attempts we should use only machine learning
     
-    lear_machine!(industry) if industry.present?
+    lear_machine!(industry) unless industry.nil?
+    industry
   end
 
   private
